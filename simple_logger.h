@@ -9,11 +9,11 @@
 #endif
 
 #ifdef ENABLE_SIMPLE_LOGGER
-  #define verbose(msg) Log.info(msg)
+  #define verbose(msg) Log.verbose(msg)
   #define info(msg) Log.info(msg)
-  #define debug(msg) Log.info(msg)
-  #define warning(msg) Log.info(msg)
-  #define error(msg) Log.info(msg)
+  #define debug(msg) Log.debug(msg)
+  #define warning(msg) Log.warning(msg)
+  #define error(msg) Log.error(msg)
 #else
   #define verbose(msg) while(false)
   #define info(msg) while(false)
